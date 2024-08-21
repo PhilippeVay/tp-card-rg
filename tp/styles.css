@@ -10,13 +10,13 @@
 /* Composant Profile (dans un vrai Design System, ce serait une déclinaison/variante d'un composant Card) */
 @layer profile {
   :root {
-    --card-gut: 12px; /* Gouttière (mobile) */
-    --card-p: var(--card-gut, 1rem);
-    --card-bg: aliceblue;
-    --card-radius: 16px;
+    --profile-gut: 12px; /* Gouttière (mobile) */
+    --profile-p: var(--profile-gut, 1rem);
+    --profile-bg: aliceblue;
+    --profile-radius: 16px;
 
     @media (min-width: 600px) {
-      --card-gut: 24px; /* Gouttière (desktop) */
+      --profile-gut: 24px; /* Gouttière (desktop) */
     }
   }
 
@@ -43,14 +43,14 @@
       "media actions"
       "title title"
       "desc desc";
-    gap: var(--card-gut);
+    gap: var(--profile-gut);
 
-    padding: var(--card-p);
+    padding: var(--profile-p);
 
     text-decoration: none;
     color: inherit;
-    background-color: var(--card-bg);
-    border-radius: var(--card-radius);
+    background-color: var(--profile-bg);
+    border-radius: var(--profile-radius);
 
     @media (min-width: 600px) {
       /* grille ~desktop (3 colonnes) */
@@ -83,7 +83,6 @@
     }
   }
 }
-
 
 /* Reset */
 @layer reset {
