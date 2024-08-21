@@ -15,6 +15,9 @@
     --card-bg: aliceblue;
     --card-radius: 16px;
 
+    @media (min-width: 600px) {
+      --card-gut: 24px; /* Gouttière (desktop) */
+    }
   }
 
   .profile-list {
@@ -26,6 +29,10 @@
 
   .profile-item {
     margin-bottom: 0.75rem;
+
+    @media (min-width: 600px) {
+      margin-bottom: 1.5rem;
+    }
   }
 
   .profile-link {
@@ -44,6 +51,14 @@
     color: inherit;
     background-color: var(--card-bg);
     border-radius: var(--card-radius);
+
+    @media (min-width: 600px) {
+      /* grille ~desktop (3 colonnes) */
+      grid-template-columns: auto 1fr auto;
+      grid-template-areas: 
+        "media title actions"
+        "media desc actions";
+    }
   }
 
   .profile-media {
@@ -60,6 +75,12 @@
 
   .profile-actions {
     grid-area: actions;
+  }
+
+  .profile-btn {
+    @media (min-width: 600px) {
+      display: block;
+    }
   }
 }
 
