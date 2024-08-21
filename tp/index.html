@@ -1,46 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link href="styles.css" rel="stylesheet" />
-    <title>Le TP qui fait peur</title>
-  </head>
 
-  <body>
-    <!-- Ci-dessous des morceaux de HTML à caser quelque part -->
+<head>
+  <meta charset="UTF-8" />
 
+  <title>Le TP qui fait peur</title>
+
+  <meta name="viewport" content="width=device-width" />
+
+  <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- StorigBock : pas de header, pas de nav, pas de footer -->
+  <main>
     <!-- Titre du document -->
     <h1>Fiches contact de l'entreprise</h1>
 
-    <!-- Images de profil -->
-    <img class="" src="images/icon-unicorn.svg" alt="" width="100" />
-    <img class="" src="images/icon-woman.svg" alt="" width="100" />
-    <img class="" src="images/icon-man.svg" alt="" width="100" />
-
-    <!-- Noms des profil -->
-    <h2 class="">Helmut Schmidt</h2>
-    <h2 class="">Schosséfine Wurcht</h2>
-    <h2 class="">Hans Schlaffenziegut</h2>
-
-    <!-- Descriptions de profil -->
-    <div class="">
-      <p>
-        Poste actuel&nbsp;: Junior Stackoverflow Analist and MacromediaFlash
-        Ninja
-      </p>
-    </div>
-    <div class="">
-      <p>
-        Poste actuel&nbsp;: Awesome Skyblog CompleteÜberCheerleader (en stage)
-      </p>
-    </div>
-    <div class="">
-      <p>
-        Poste actuel&nbsp;: Senior Copy&nbsp;&amp;&nbsp;Paste Ambassador (à la
-        retraite)
-      </p>
-    </div>
+    <!-- 3 profils -->
+    <ul class="profile-list">
+      <li class="profile-item">
+        <a href="#" class="profile-link">
+          <img class="profile-media" src="images/icon-unicorn.svg" alt="" width="100" />
 
     <!-- Actions sur la card -->
     <div class="">
@@ -60,4 +41,45 @@
       </button>
     </div>
   </body>
+          <h2 class="profile-title">Helmut Schmidt</h2>
+          
+          <!-- Peut contenir plusieurs § -->
+          <div class="profile-desc">
+            <p>
+              Poste actuel&nbsp;: Junior Stackoverflow Analist and MacromediaFlash
+              Ninja
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="profile-item">
+        <a href="#" class="profile-link">
+          <img class="profile-media" src="images/icon-woman.svg" alt="" width="100" />
+          
+          <h2 class="profile-title">Schosséfine Wurcht</h2>
+          
+          <div class="profile-desc">
+            <p>
+              Poste actuel&nbsp;: Awesome Skyblog CompleteÜberCheerleader (en stage)
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="profile-item">
+        <a href="#" class="profile-link">
+          <img class="profile-media" src="images/icon-man.svg" alt="" width="100" />
+          
+          <h2 class="profile-title">Hans Schlaffenziegut</h2>
+          
+          <div class="profile-desc">
+            <p>
+              Poste actuel&nbsp;: Senior Copy&nbsp;&amp;&nbsp;Paste Ambassador (à la
+              retraite)
+            </p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
 </html>
