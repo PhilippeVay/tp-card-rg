@@ -1,4 +1,68 @@
 /* Ma solution */
+@layer reset, deco, profile, debug;
+
+/* @layer debug {
+  main * {
+    outline: 1px dotted red;
+  }
+} */
+
+/* Composant Profile (dans un vrai Design System, ce serait une déclinaison/variante d'un composant Card) */
+@layer profile {
+  :root {
+    --card-gut: 12px; /* Gouttière (mobile) */
+    --card-p: var(--card-gut, 1rem);
+    --card-bg: aliceblue;
+    --card-radius: 16px;
+
+  }
+
+  .profile-list {
+    display: grid;
+    gap: 0.75rem;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .profile-item {
+    margin-bottom: 0.75rem;
+  }
+
+  .profile-link {
+    display: grid;
+    /* grille mobile (2 colonnes) */
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 
+      "media actions"
+      "title title"
+      "desc desc";
+    gap: var(--card-gut);
+
+    padding: var(--card-p);
+
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--card-bg);
+    border-radius: var(--card-radius);
+  }
+
+  .profile-media {
+    grid-area: media;
+  }
+
+  .profile-title {
+    grid-area: title;
+  }
+
+  .profile-desc {
+    grid-area: desc;
+  }
+
+  .profile-actions {
+    grid-area: actions;
+  }
+}
+
 
 /* Reset */
 @layer reset {
